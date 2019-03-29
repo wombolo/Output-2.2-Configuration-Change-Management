@@ -5,9 +5,10 @@
 
   vars:
     NODEJS_VERSION: 10
-    REPO_LINK: https://github.com/andela/krypton-ah-frontend.git
+    REPO_LINK: https://github.com/andela/merry-ah-frontend.git
     REPO_LOCAL: /home/ubuntu/authors_haven
     APP_ENV: |
+      CLOUDINARY_API = 199196371633358
       API_BASE_URL = https://krypton-ah-stage.herokuapp.com/api/v1
       BASE_URL_CB = https://krypton-ah-fe-stage.herokuapp.com
       FACEBOOK_URL = https://krypton-ah-stage.herokuapp.com/api/v1/auth/facebook
@@ -15,6 +16,7 @@
       LINKEDIN_URL = https://krypton-ah-stage.herokuapp.com/api/v1/auth/linkedin
       TWITTER_URL = https://krypton-ah-stage.herokuapp.com/api/v1/auth/
       BASE_URL_CB = https://krypton-ah-fe-stage.herokuapp.com
+
 
   tasks:
     - name: Update cache
@@ -61,7 +63,7 @@
         repo: "{{ REPO_LINK }}"
         dest: "{{ REPO_LOCAL }}"
         clone: yes
-        version: develop
+        version: demo
 
 
     - name: Make REPO_LOCAL folder writable
