@@ -8,7 +8,6 @@
     REPO_LINK: https://github.com/andela/merry-ah-frontend.git
     REPO_LOCAL: /home/ubuntu/authors_haven
     APP_ENV: |
-      CLOUDINARY_API = 199196371633358
       API_BASE_URL = https://krypton-ah-stage.herokuapp.com/api/v1
       BASE_URL_CB = https://krypton-ah-fe-stage.herokuapp.com
       FACEBOOK_URL = https://krypton-ah-stage.herokuapp.com/api/v1/auth/facebook
